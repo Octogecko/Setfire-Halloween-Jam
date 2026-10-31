@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: ce9ba8488f8dc4cfd8f819c0306d8373
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9129445379075034429
+    second: Salon meuble_0
+  - first:
+      213: 1318424566866357649
+    second: Salon meuble_1
+  - first:
+      213: 5511349463132414742
+    second: Salon meuble_2
+  - first:
+      213: -6588645182768615705
+    second: Salon meuble_3
+  - first:
+      213: 3681464347263733501
+    second: Salon meuble_4
+  - first:
+      213: -282468539970853356
+    second: Salon meuble_5
+  - first:
+      213: -8195618895429588486
+    second: Salon meuble_6
+  - first:
+      213: -5274226528917607603
+    second: Salon meuble_7
+  - first:
+      213: 5959389258800591295
+    second: Salon meuble_8
+  - first:
+      213: -2900263296887795523
+    second: Salon meuble_9
+  - first:
+      213: -1292743263318031696
+    second: Salon meuble_10
+  - first:
+      213: 882176552132920585
+    second: Salon meuble_11
+  - first:
+      213: -7620113579493726418
+    second: Salon meuble_12
+  - first:
+      213: 5241759575196409103
+    second: Salon meuble_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Salon meuble_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1642
+        width: 390
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2b6ef2cc1bd4180800000000000000
+      internalID: -9129445379075034429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_1
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1930
+        width: 130
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19da733882cfb4210800000000000000
+      internalID: 1318424566866357649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_2
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1642
+        width: 1134
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6132c07e22f3c7c40800000000000000
+      internalID: 5511349463132414742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_3
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 1930
+        width: 130
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeecf94d1e6094a0800000000000000
+      internalID: -6588645182768615705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_4
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 1686
+        width: 234
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe8bef8150371330800000000000000
+      internalID: 3681464347263733501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_5
+      rect:
+        serializedVersion: 2
+        x: 3753
+        y: 44
+        width: 297
+        height: 1917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41660d60c58741cf0800000000000000
+      internalID: -282468539970853356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_6
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 933
+        width: 1059
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9a07f6900534e80800000000000000
+      internalID: -8195618895429588486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_7
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 970
+        width: 154
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bacee7aee2ec6b0800000000000000
+      internalID: -5274226528917607603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_8
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 494
+        width: 585
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb17619e4f004b250800000000000000
+      internalID: 5959389258800591295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_9
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 963
+        width: 154
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db056e1d5e130c7d0800000000000000
+      internalID: -2900263296887795523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_10
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 488
+        width: 303
+        height: 1430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2462ce9d04f0ee0800000000000000
+      internalID: -1292743263318031696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 51
+        width: 1318
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905cf0376ee1e3c00800000000000000
+      internalID: 882176552132920585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_12
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 670
+        width: 154
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e276522921bef3690800000000000000
+      internalID: -7620113579493726418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salon meuble_13
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 663
+        width: 154
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d9595cf887eb840800000000000000
+      internalID: 5241759575196409103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Salon meuble_0: -9129445379075034429
+      Salon meuble_1: 1318424566866357649
+      Salon meuble_10: -1292743263318031696
+      Salon meuble_11: 882176552132920585
+      Salon meuble_12: -7620113579493726418
+      Salon meuble_13: 5241759575196409103
+      Salon meuble_2: 5511349463132414742
+      Salon meuble_3: -6588645182768615705
+      Salon meuble_4: 3681464347263733501
+      Salon meuble_5: -282468539970853356
+      Salon meuble_6: -8195618895429588486
+      Salon meuble_7: -5274226528917607603
+      Salon meuble_8: 5959389258800591295
+      Salon meuble_9: -2900263296887795523
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
