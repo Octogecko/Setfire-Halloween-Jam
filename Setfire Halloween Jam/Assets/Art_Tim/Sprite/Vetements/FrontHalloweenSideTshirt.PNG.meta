@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 60143caa9dafcf44e81335768447b099
+guid: e32756fe79c402d4f97fd01715e34c19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8573134210926859190
-    second: arrow_timer_01_0
+      213: 148233198724499523
+    second: FrontHalloweenSideTshirt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrow_timer_01_0
+      name: FrontHalloweenSideTshirt_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 142
-        width: 171
-        height: 535
+        x: 4
+        y: 15
+        width: 120
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b35b067424e9f670800000000000000
-      internalID: 8573134210926859190
+      spriteID: 348c4e11f41ae0200800000000000000
+      internalID: 148233198724499523
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      arrow_timer_01_0: 8573134210926859190
+      FrontHalloweenSideTshirt_0: 148233198724499523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
