@@ -582,9 +582,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 3
   acceleration: 10
-  deceleration: 10
+  deceleration: 20
   baseSpeed: 3
-  maxSpeed: 6
+  maxSpeed: 8
+  timeBeforeDirectionChange: 0.08
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

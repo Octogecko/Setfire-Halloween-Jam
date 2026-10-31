@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,12 +14,34 @@ public class PlayerMovement : MonoBehaviour
     private bool slowingDown = false;
 
     // Rotation
-    private float adjacent;
-    private float opposite;
     private float alpha;
+
+    // Time
+    [SerializeField] private float timeBeforeDirectionChange = 0.08f;
+    private float changeTimer;
+    private bool isChanging = false;
+    private Vector2 changingDirection;
+
+    private Rigidbody2D _rb;
+
+    private void Start()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
+        if (isChanging)
+        {
+            changeTimer -= Time.deltaTime;
+
+            if (changeTimer <= 0)
+            {
+                ChangeDirection(changingDirection);
+                isChanging = false;
+            }
+        }
+
         if (accelerating)
         {
             if (speed < maxSpeed)
@@ -33,15 +53,20 @@ public class PlayerMovement : MonoBehaviour
         {
             if (speed > 0)
             {
-                speed -= acceleration * Time.deltaTime;
+                speed -= deceleration * Time.deltaTime;
             }
             else
             {
                 direction = Vector2.zero;
-                speed = 3;
+                speed = baseSpeed;
                 slowingDown = false;
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        _rb.MovePosition(transform.position + new Vector3(direction.x, direction.y).normalized * speed * Time.fixedDeltaTime);
     }
 
     public void OnMovement(InputAction.CallbackContext context)
@@ -55,22 +80,35 @@ public class PlayerMovement : MonoBehaviour
 
         if (!context.canceled)
         {
-            direction = context.ReadValue<Vector2>();
+            Vector2 input = context.ReadValue<Vector2>();
 
-            adjacent = transform.position.x + direction.x - transform.position.x;
-            opposite = transform.position.y + direction.y - transform.position.y;
-            alpha = Mathf.Atan2(opposite, adjacent) * (180 / Mathf.PI);
-            transform.rotation = Quaternion.Euler(0f, 0f, alpha);
+            bool wasDiagonal = direction.x != 0 && direction.y != 0;
+            bool nowCardinal = (input.x == 0) != (input.y == 0);
+
+            if (accelerating && wasDiagonal && nowCardinal)
+            {
+                changingDirection = input;
+                changeTimer = timeBeforeDirectionChange;
+                isChanging = true;
+            }
+            else
+            {
+                isChanging = false;
+                ChangeDirection(input);
+            }
         }
         else
         {
+            isChanging = false;
             slowingDown = true;
             accelerating = false;
         }
     }
 
-    private void FixedUpdate()
+    private void ChangeDirection(Vector2 newDirection)
     {
-        GetComponent<Rigidbody2D>().MovePosition(transform.position + new Vector3(direction.x, direction.y) * speed * Time.fixedDeltaTime);
+        direction = newDirection;
+        alpha = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI);
+        transform.rotation = Quaternion.Euler(0f, 0f, alpha);
     }
 }
