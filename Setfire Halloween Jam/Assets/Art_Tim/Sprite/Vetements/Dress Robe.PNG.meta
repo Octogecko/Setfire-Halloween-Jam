@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c5016c761a3b3a6419ed74a3f916356f
+guid: 4051e819e9904b24285188b6c9e3dcc8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8735709994193329183
-    second: BackHalloweenTshirt_0
+      213: 752221212520109870
+    second: Dress Robe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackHalloweenTshirt_0
+      name: Dress Robe_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 120
-        height: 101
+        x: 17
+        y: 4
+        width: 94
+        height: 108
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1c19b8b4f97b3970800000000000000
-      internalID: 8735709994193329183
+      spriteID: e2756c4153d607a00800000000000000
+      internalID: 752221212520109870
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackHalloweenTshirt_0: 8735709994193329183
+      Dress Robe_0: 752221212520109870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

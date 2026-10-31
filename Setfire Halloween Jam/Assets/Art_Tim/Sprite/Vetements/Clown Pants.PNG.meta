@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e32756fe79c402d4f97fd01715e34c19
+guid: 3addf0a3411bcb340b7a16ee35c6e002
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 148233198724499523
-    second: FrontHalloweenSideTshirt_0
+      213: -3218876042657547638
+    second: Clown Pants_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FrontHalloweenSideTshirt_0
+      name: Clown Pants_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 120
-        height: 101
+        x: 26
+        y: 10
+        width: 76
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 348c4e11f41ae0200800000000000000
-      internalID: 148233198724499523
+      spriteID: a8ab1652b414453d0800000000000000
+      internalID: -3218876042657547638
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FrontHalloweenSideTshirt_0: 148233198724499523
+      Clown Pants_0: -3218876042657547638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

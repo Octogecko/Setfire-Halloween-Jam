@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f2bba4dd2a6e09244a31b7f835eede1b
+guid: 09f9a90f8961abe4bb24090cda7b8bfa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1454810310443499985
-    second: BackHalloweenOrangeTshirt_0
+      213: -501061396546118673
+    second: Pumpkin Head_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackHalloweenOrangeTshirt_0
+      name: Pumpkin Head_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 120
-        height: 101
+        x: 24
+        y: 24
+        width: 80
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2e70760bb97fcbe0800000000000000
-      internalID: -1454810310443499985
+      spriteID: feb1538805fdb09f0800000000000000
+      internalID: -501061396546118673
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackHalloweenOrangeTshirt_0: -1454810310443499985
+      Pumpkin Head_0: -501061396546118673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

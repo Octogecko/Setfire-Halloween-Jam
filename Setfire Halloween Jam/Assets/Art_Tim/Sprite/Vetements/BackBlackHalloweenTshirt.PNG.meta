@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f3f358fd3b43704ea4cd5dc573ccbe6
+guid: 4d4e0be1b3b45374889207b2beb992b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 724763442578929183
-    second: FrontHalloweenOrangeTshirt_0
+      213: 2421423136856831116
+    second: BackBlackHalloweenTshirt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FrontHalloweenOrangeTshirt_0
+      name: BackBlackHalloweenTshirt_0
       rect:
         serializedVersion: 2
         x: 4
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f163b15d280ee0a00800000000000000
-      internalID: 724763442578929183
+      spriteID: c847343838f9a9120800000000000000
+      internalID: 2421423136856831116
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FrontHalloweenOrangeTshirt_0: 724763442578929183
+      BackBlackHalloweenTshirt_0: 2421423136856831116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

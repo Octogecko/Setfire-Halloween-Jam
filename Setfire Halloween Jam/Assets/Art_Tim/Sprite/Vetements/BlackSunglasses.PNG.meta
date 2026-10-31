@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0510ee84cbd01094eacd138c7d830f1f
+guid: d269fd8572a5003498c5e279c1259560
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6049569772974772024
-    second: FrontScaryFaceOrangeTshirt_0
+      213: 931261163190211082
+    second: BlackSunglasses_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FrontScaryFaceOrangeTshirt_0
+      name: BlackSunglasses_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 15
-        width: 120
-        height: 101
+        x: 29
+        y: 39
+        width: 70
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83f0a1218a364f350800000000000000
-      internalID: 6049569772974772024
+      spriteID: a02d11908118cec00800000000000000
+      internalID: 931261163190211082
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FrontScaryFaceOrangeTshirt_0: 6049569772974772024
+      BlackSunglasses_0: 931261163190211082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
