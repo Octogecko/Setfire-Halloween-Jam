@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 3866964416ebb4b3394384bd304216dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3093061385237533935
+    second: Salle de bain meuble_0
+  - first:
+      213: -293655993341631363
+    second: Salle de bain meuble_1
+  - first:
+      213: 7780628641440407344
+    second: Salle de bain meuble_2
+  - first:
+      213: -5856567963137678250
+    second: Salle de bain meuble_3
+  - first:
+      213: 7726892649666271998
+    second: Salle de bain meuble_4
+  - first:
+      213: -4870950572334746217
+    second: Salle de bain meuble_5
+  - first:
+      213: 4839534229887328025
+    second: Salle de bain meuble_6
+  - first:
+      213: -7644565495615840904
+    second: Salle de bain meuble_7
+  - first:
+      213: 119059311589522567
+    second: Salle de bain meuble_8
+  - first:
+      213: 771653618861665365
+    second: Salle de bain meuble_9
+  - first:
+      213: -5436628598306275524
+    second: Salle de bain meuble_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Salle de bain meuble_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3248
+        width: 458
+        height: 792
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b6070de0d3315d0800000000000000
+      internalID: -3093061385237533935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_1
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 3765
+        width: 607
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7425be0e69bcebf0800000000000000
+      internalID: -293655993341631363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_2
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 3898
+        width: 413
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f194e96885afb60800000000000000
+      internalID: 7780628641440407344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3894
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654ee3a877a49bea0800000000000000
+      internalID: -5856567963137678250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_4
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 3782
+        width: 265
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa5fe01def6b3b60800000000000000
+      internalID: 7726892649666271998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 3287
+        width: 148
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79570890348e66cb0800000000000000
+      internalID: -4870950572334746217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_6
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 3533
+        width: 259
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f17cabdba792340800000000000000
+      internalID: 4839534229887328025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_7
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 3477
+        width: 559
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d1c933f2c09e590800000000000000
+      internalID: -7644565495615840904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_8
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3448
+        width: 200
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cfe7620dbf6a100800000000000000
+      internalID: 119059311589522567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2507
+        width: 687
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ce4e1c0e675ba00800000000000000
+      internalID: 771653618861665365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salle de bain meuble_10
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 2513
+        width: 284
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f793628173d84b0800000000000000
+      internalID: -5436628598306275524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Salle de bain meuble_0: -3093061385237533935
+      Salle de bain meuble_1: -293655993341631363
+      Salle de bain meuble_10: -5436628598306275524
+      Salle de bain meuble_2: 7780628641440407344
+      Salle de bain meuble_3: -5856567963137678250
+      Salle de bain meuble_4: 7726892649666271998
+      Salle de bain meuble_5: -4870950572334746217
+      Salle de bain meuble_6: 4839534229887328025
+      Salle de bain meuble_7: -7644565495615840904
+      Salle de bain meuble_8: 119059311589522567
+      Salle de bain meuble_9: 771653618861665365
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
