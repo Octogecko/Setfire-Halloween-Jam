@@ -31,12 +31,12 @@ public class PlayerInteractions : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name + " : Out");
         if (collision.CompareTag("NPC"))
         {
             collidingNPCs.Remove(collision.gameObject);
             targetObject = FindClosestObject(collidingNPCs);
             collision.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            collision.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         }
     }
 
@@ -56,9 +56,14 @@ public class PlayerInteractions : MonoBehaviour
                 smallestDistance = currentDistance;
             }
         }
-        
-        if (targetObject && closestObject != targetObject) targetObject.transform.GetChild(0).gameObject.SetActive(false);
+
+        if (targetObject && closestObject != targetObject)
+        {
+            targetObject.transform.GetChild(0).gameObject.SetActive(false);
+            targetObject.transform.GetChild(1).gameObject.SetActive(false);
+        }
         closestObject.transform.GetChild(0).gameObject.SetActive(true);
+        closestObject.transform.GetChild(1).gameObject.SetActive(true);
 
         return closestObject;
     }

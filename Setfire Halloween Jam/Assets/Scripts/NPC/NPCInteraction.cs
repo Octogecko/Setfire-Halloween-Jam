@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class NPCInteraction : MonoBehaviour
 {
@@ -8,10 +10,15 @@ public class NPCInteraction : MonoBehaviour
     private GameObject interactionCanvas;
     private GameObject player;
 
-    private void Start()
+    private void Awake()
     {
         interactionCanvas = GameObject.FindGameObjectWithTag("Interaction");
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    private void Start()
+    {
+        interactionCanvas.SetActive(false);
     }
 
     public void Interact()
@@ -22,7 +29,8 @@ public class NPCInteraction : MonoBehaviour
         }
         else
         {
-
+            interactionCanvas.transform.GetChild(1).GetComponent<Image>().sprite = fileSprite;
+            interactionCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = fileDialogue;
             interactionCanvas.SetActive(true);
         }
     }
