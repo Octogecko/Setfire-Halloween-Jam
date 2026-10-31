@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
                 direction = Vector2.zero;
                 speed = baseSpeed;
                 slowingDown = false;
+                GetComponent<Animator>().SetBool("walking", false);
             }
         }
     }
@@ -77,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.started)
         {
             speed = baseSpeed;
+            GetComponent<Animator>().SetBool("walking", true);
         }
 
         if (!context.canceled && input != Vector2.zero)
