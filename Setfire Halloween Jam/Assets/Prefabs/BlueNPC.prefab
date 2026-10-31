@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7148311470629604991}
   - component: {fileID: 7143756839439553096}
   - component: {fileID: 8429468111649770944}
+  - component: {fileID: -2857931185335934632}
   m_Layer: 0
   m_Name: BlueNPC
   m_TagString: NPC
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 9149813912856529421, guid: 8304706b8abf6134297412ebbde3f63e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -131,7 +132,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2
+  m_Radius: 3
 --- !u!114 &8429468111649770944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +148,20 @@ MonoBehaviour:
   fileSprite: {fileID: 9149813912856529421, guid: 8304706b8abf6134297412ebbde3f63e, type: 3}
   fileDialogue: I actually hate Halloween
   imposter: 0
+--- !u!114 &-2857931185335934632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638168020945527056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37b2fe9563cf674db46009a25ded1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCLayer
+  pants: {fileID: 0}
+  clothes: []
 --- !u!1 &4395614214564016523
 GameObject:
   m_ObjectHideFlags: 0

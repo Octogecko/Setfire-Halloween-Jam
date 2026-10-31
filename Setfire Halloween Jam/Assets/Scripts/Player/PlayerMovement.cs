@@ -118,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("back", false);
             GetComponent<Animator>().SetBool("side", true);
-            GetComponent<SpriteRenderer>().flipX = direction.x < 0;
+            GetComponent<SpriteRenderer>().flipX = direction.x <= 0;
         }
         else
         {

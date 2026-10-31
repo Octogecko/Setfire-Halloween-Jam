@@ -31,9 +31,9 @@ public class NPCInteraction : MonoBehaviour
         }
         else
         {
-            interactionCanvas.transform.GetChild(1).GetComponent<Image>().sprite = fileSprite;
-            interactionCanvas.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = fileDialogue;
-            interactionCanvas.transform.GetChild(3).GetComponent<KickOut>().npc = gameObject;
+            interactionCanvas.transform.GetChild(4).GetComponent<Image>().sprite = fileSprite;
+            interactionCanvas.transform.GetChild(5).GetComponent<TextMeshProUGUI>().text = fileDialogue;
+            interactionCanvas.transform.GetChild(6).GetComponent<KickOut>().npc = gameObject;
             interactionCanvas.SetActive(true);
             player.GetComponent<PlayerMovement>().enabled = false;
         }

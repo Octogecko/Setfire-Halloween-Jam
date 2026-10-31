@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 6680327855330428553}
   - component: {fileID: 8857892848852792583}
   - component: {fileID: 2371935509735535214}
+  - component: {fileID: -3710797538735549836}
   m_Layer: 0
   m_Name: PinkNPC
   m_TagString: NPC
@@ -264,7 +265,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4473487038587497515, guid: da59f2de7fcf4a644ab426dfee8f035c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -312,7 +313,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2
+  m_Radius: 3
 --- !u!114 &2371935509735535214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +329,20 @@ MonoBehaviour:
   fileSprite: {fileID: -4473487038587497515, guid: da59f2de7fcf4a644ab426dfee8f035c, type: 3}
   fileDialogue: Alright you are NOT respecting the dress code
   imposter: 0
+--- !u!114 &-3710797538735549836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004515368595351701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37b2fe9563cf674db46009a25ded1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCLayer
+  pants: {fileID: 0}
+  clothes: []
 --- !u!1 &8783145620707618206
 GameObject:
   m_ObjectHideFlags: 0
