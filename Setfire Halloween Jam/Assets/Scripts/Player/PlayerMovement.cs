@@ -132,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Animator>().SetBool("back", false);
                 GetComponent<Animator>().SetBool("side", false);
             }
+            GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 }
