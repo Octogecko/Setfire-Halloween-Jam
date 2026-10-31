@@ -12,6 +12,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 direction;
     private bool accelerating = false;
     private bool slowingDown = false;
+    private bool nowCardinal = false;
+    private bool wasDiagonal = false;
+    private bool returningStick = false;
+    private float lastMagnitude = 0f;
+
 
     // Rotation
     private float alpha;
@@ -66,26 +71,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.MovePosition(transform.position + new Vector3(direction.x, direction.y).normalized * speed * Time.fixedDeltaTime);
+        _rb.MovePosition(_rb.position + direction.normalized * speed * Time.fixedDeltaTime);
     }
 
     public void OnMovement(InputAction.CallbackContext context)
     {
+        Vector2 input = context.ReadValue<Vector2>();
+
         if (context.started)
         {
-            slowingDown = false;
-            accelerating = true;
             speed = baseSpeed;
         }
 
-        if (!context.canceled)
+        if (!context.canceled && input != Vector2.zero)
         {
-            Vector2 input = context.ReadValue<Vector2>();
+            slowingDown = false;
+            accelerating = true;
+            wasDiagonal = direction.x != 0 && direction.y != 0;
+            nowCardinal = (input.x == 0) != (input.y == 0);
+            returningStick = input.magnitude < lastMagnitude - 0.01f;
+            lastMagnitude = input.magnitude;
 
-            bool wasDiagonal = direction.x != 0 && direction.y != 0;
-            bool nowCardinal = (input.x == 0) != (input.y == 0);
-
-            if (accelerating && wasDiagonal && nowCardinal)
+            if ((wasDiagonal && nowCardinal) || returningStick)
             {
                 changingDirection = input;
                 changeTimer = timeBeforeDirectionChange;
@@ -99,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            lastMagnitude = 0f;
             isChanging = false;
             slowingDown = true;
             accelerating = false;
