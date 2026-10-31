@@ -17,10 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private bool returningStick = false;
     private float lastMagnitude = 0f;
 
-
-    // Rotation
-    private float alpha;
-
     // Time
     [SerializeField] private float timeBeforeDirectionChange = 0.08f;
     private float changeTimer;
@@ -116,7 +112,24 @@ public class PlayerMovement : MonoBehaviour
     private void ChangeDirection(Vector2 newDirection)
     {
         direction = newDirection;
-        alpha = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI);
-        transform.rotation = Quaternion.Euler(0f, 0f, alpha);
+        if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.y))
+        {
+            GetComponent<Animator>().SetBool("back", false);
+            GetComponent<Animator>().SetBool("side", true);
+            GetComponent<SpriteRenderer>().flipX = direction.x < 0;
+        }
+        else
+        {
+            if (direction.y >= 0)
+            {
+                GetComponent<Animator>().SetBool("back", true);
+                GetComponent<Animator>().SetBool("side", false);
+            }
+            else
+            {
+                GetComponent<Animator>().SetBool("back", false);
+                GetComponent<Animator>().SetBool("side", false);
+            }
+        }
     }
 }
