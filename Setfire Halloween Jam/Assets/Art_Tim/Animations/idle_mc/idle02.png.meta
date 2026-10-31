@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 687b49b442bb56b4380f76510faf07e5
+guid: f4dfe8efd23d7ad449bb1f47f9229b7b
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,34 +98,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: idle02_0
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 0
-        width: 185
-        height: 253
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfd25e32dca0f3dc0800000000000000
-      internalID: -3657192496214757892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8a9f2579ce857334e96e634626a60c22
     internalID: 0
     vertices: []
     indices: 
