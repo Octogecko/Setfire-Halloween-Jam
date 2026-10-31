@@ -7,9 +7,7 @@ public class RoomFog : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Ouais");
             GetComponent<TilemapRenderer>().enabled = false; // à transformer en fondu
-            Debug.Log("Il est pas false là");
         }
     }
 
