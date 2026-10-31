@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Chain:
     m_EffectorTransform: {fileID: 0}
     m_TargetTransform: {fileID: 0}
-    m_TransformCount: 3
+    m_TransformCount: 0
     m_Transforms:
     - {fileID: 0}
     - {fileID: 0}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Chain:
     m_EffectorTransform: {fileID: 0}
     m_TargetTransform: {fileID: 0}
-    m_TransformCount: 3
+    m_TransformCount: 0
     m_Transforms:
     - {fileID: 0}
     - {fileID: 0}
@@ -233,15 +233,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: c0cff1911a043074d819282dcfcfb0bd, type: 3}
       propertyPath: m_Name
-      value: rig back 1
+      value: rig back
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c0cff1911a043074d819282dcfcfb0bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.333591
+      value: -5.675226
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c0cff1911a043074d819282dcfcfb0bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.881951
+      value: -3.5167167
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c0cff1911a043074d819282dcfcfb0bd, type: 3}
       propertyPath: m_LocalPosition.z
