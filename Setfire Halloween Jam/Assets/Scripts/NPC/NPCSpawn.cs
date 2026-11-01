@@ -7,6 +7,10 @@ public class NPCSpawn : MonoBehaviour
 
     [SerializeField] private List<Transform> rooms = new List<Transform>();
     [SerializeField] private List<GameObject> npc = new List<GameObject>();
+    [SerializeField] private Sprite[] costumes;
+    [SerializeField] private Sprite[] hats;
+    [SerializeField] private Sprite[] shirts;
+    [SerializeField] private Sprite[] pants;
     private GameObject newNpc;
 
     private List<List<float>> limits = new List<List<float>>()
@@ -26,6 +30,11 @@ public class NPCSpawn : MonoBehaviour
 
     void Awake()
     {
+        costumes = Resources.LoadAll<Sprite>("clothes/Costume");
+        hats = Resources.LoadAll<Sprite>("clothes/Hat");
+        shirts = Resources.LoadAll<Sprite>("clothes/Shirt");
+        pants = Resources.LoadAll<Sprite>("clothes/Pants");
+
         contactFilter.useTriggers = true;
         contactFilter.layerMask = mask;
         contactFilter.useLayerMask = true;
@@ -46,8 +55,9 @@ public class NPCSpawn : MonoBehaviour
             availableSpawnPoint.Add(spawnPoints);
         }
 
-        for (int i = 0; i < npcAmount; i++)
+        for (int i = 0; i < npcAmount; i++) // spawning npcAmount NPCs
         {
+            // Spawning the NPC at the right position
             int room = Random.Range(0, limits.Count);
             Transform parent = rooms[room];
             GameObject chosenNPC = npc[Random.Range(0, npc.Count)];
@@ -55,6 +65,19 @@ public class NPCSpawn : MonoBehaviour
             newNpc = Instantiate(chosenNPC, parent);
             newNpc.transform.position = availableSpawnPoint[room][spawnPointIndex];
             availableSpawnPoint[room].RemoveAt(spawnPointIndex);
+
+            // Giving the NPC clothes
+            SpriteRenderer[] clothes = newNpc.transform.GetComponentsInChildren<SpriteRenderer>();
+            if (Random.Range(0f, 10f) > 8) // 2/10 chance of giving the npc a costume. If not, gives it clothes
+            {
+                clothes[1].sprite = costumes[Random.Range(0, costumes.Length)];
+            }
+            else
+            {
+                clothes[2].sprite = hats[Random.Range(0, hats.Length)];
+                clothes[3].sprite = shirts[Random.Range(0, shirts.Length)];
+                clothes[4].sprite = pants[Random.Range(0, pants.Length)];
+            }
         }
 
         finishedSpawning = true;

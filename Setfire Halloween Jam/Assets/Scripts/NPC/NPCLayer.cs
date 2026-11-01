@@ -5,8 +5,9 @@ public class NPCLayer : MonoBehaviour
     private GameObject player;
     private SpriteRenderer _rd;
 
-    [SerializeField] private GameObject pants;
-    [SerializeField] private GameObject[] clothes;
+    public GameObject costume;
+    public GameObject pants;
+    public GameObject[] clothes;
 
     private bool inZone;
 
@@ -21,7 +22,10 @@ public class NPCLayer : MonoBehaviour
         if (transform.position.y >= player.transform.position.y && inZone || !inZone)
         {
             _rd.sortingOrder = 18;
-            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 19;
+            SpriteRenderer pantsSprite = pants.GetComponent<SpriteRenderer>();
+            SpriteRenderer costumeSprite = costume.GetComponent<SpriteRenderer>();
+            if (pantsSprite.sprite) pantsSprite.sortingOrder = 19;
+            else if (costumeSprite.sprite) costumeSprite.sortingOrder = 19;
             if (clothes.Length != 0)
             {
                 foreach (GameObject clothe in clothes)
@@ -33,7 +37,10 @@ public class NPCLayer : MonoBehaviour
         else
         {
             _rd.sortingOrder = 22;
-            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 23;
+            SpriteRenderer pantsSprite = pants.GetComponent<SpriteRenderer>();
+            SpriteRenderer costumeSprite = costume.GetComponent<SpriteRenderer>();  
+            if (pantsSprite.sprite) pantsSprite.sortingOrder = 23;
+            else if (costumeSprite.sprite) costumeSprite.sortingOrder = 23;
             if (clothes.Length != 0)
             {
                 foreach (GameObject clothe in clothes)
