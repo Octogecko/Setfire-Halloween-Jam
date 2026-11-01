@@ -7,6 +7,7 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private Sprite fileSprite;
     [SerializeField] private string fileDialogue;
     public bool imposter;
+    public bool hasThemedClothes;
 
     private GameObject interactionCanvas;
     private GameObject npcCamera;

@@ -7,10 +7,10 @@ public class NPCSpawn : MonoBehaviour
 
     [SerializeField] private List<Transform> rooms = new List<Transform>();
     [SerializeField] private List<GameObject> npc = new List<GameObject>();
-    [SerializeField] private Sprite[] costumes;
-    [SerializeField] private Sprite[] hats;
-    [SerializeField] private Sprite[] shirts;
-    [SerializeField] private Sprite[] pants;
+    [SerializeField] private List<Sprite> costumes;
+    [SerializeField] private List<Sprite> hats;
+    [SerializeField] private List<Sprite> shirts;
+    [SerializeField] private List<Sprite> pants;
     private GameObject newNpc;
 
     private List<List<float>> limits = new List<List<float>>()
@@ -23,18 +23,15 @@ public class NPCSpawn : MonoBehaviour
     private List<List<Vector3>> availableSpawnPoint = new List<List<Vector3>>();
     private Vector3 height = new Vector3(0f, 0.2f);
 
-    private int npcAmount = 100;
+    [SerializeField] private int npcAmount = 100;
+    [SerializeField] private int impostorAmount = 10;
+    private int currentImpostors = 0;
 
     private ContactFilter2D contactFilter = new ContactFilter2D();
     public LayerMask mask = new LayerMask();
 
-    void Awake()
+    void Start()
     {
-        costumes = Resources.LoadAll<Sprite>("clothes/Costume");
-        hats = Resources.LoadAll<Sprite>("clothes/Hat");
-        shirts = Resources.LoadAll<Sprite>("clothes/Shirt");
-        pants = Resources.LoadAll<Sprite>("clothes/Pants");
-
         contactFilter.useTriggers = true;
         contactFilter.layerMask = mask;
         contactFilter.useLayerMask = true;
@@ -67,17 +64,70 @@ public class NPCSpawn : MonoBehaviour
             availableSpawnPoint[room].RemoveAt(spawnPointIndex);
 
             // Giving the NPC clothes
-            SpriteRenderer[] clothes = newNpc.transform.GetComponentsInChildren<SpriteRenderer>();
-            if (Random.Range(0f, 10f) > 8) // 2/10 chance of giving the npc a costume. If not, gives it clothes
+            ref bool hasThemedClothes = ref newNpc.GetComponent<NPCInteraction>().hasThemedClothes;
+            ref bool impostor = ref newNpc.GetComponent<NPCInteraction>().imposter;
+            if (currentImpostors < 10) impostor = Random.Range(0, 10) == 8;
+            else impostor = false;
+
+            if (impostor) currentImpostors++; 
+            bool themedClotheNow = Random.Range(0, 2) == 0;
+            if (!impostor)
             {
-                clothes[1].sprite = costumes[Random.Range(0, costumes.Length)];
+                costumes.AddRange(Resources.LoadAll<Sprite>("clothes/Costume/" + GameStateManager.Instance.theme)); // Loading the clothes in theme if the npc isn't an impostor
             }
             else
             {
-                clothes[2].sprite = hats[Random.Range(0, hats.Length)];
-                clothes[3].sprite = shirts[Random.Range(0, shirts.Length)];
-                clothes[4].sprite = pants[Random.Range(0, pants.Length)];
+                costumes.AddRange(Resources.LoadAll<Sprite>("clothes/Costume/" + GameStateManager.Instance.outOfTheme.ToString()));
+                costumes.AddRange(Resources.LoadAll<Sprite>("clothes/Costume/Other"));
             }
+            themedClotheNow = Random.Range(0, 2) == 0;
+            hasThemedClothes = hasThemedClothes || themedClotheNow;
+            if (themedClotheNow && !impostor)
+            {
+                hats.AddRange(Resources.LoadAll<Sprite>("clothes/Hat/" + GameStateManager.Instance.theme));
+            }
+            else
+            {
+                hats.AddRange(Resources.LoadAll<Sprite>("clothes/Hat/" + GameStateManager.Instance.outOfTheme));
+                hats.AddRange(Resources.LoadAll<Sprite>("clothes/Hat/Other"));
+            }
+            themedClotheNow = Random.Range(0, 2) == 0;
+            hasThemedClothes = hasThemedClothes || themedClotheNow;
+            if (themedClotheNow && !impostor)
+            {
+                shirts.AddRange(Resources.LoadAll<Sprite>("clothes/Shirt/" + GameStateManager.Instance.theme));
+            }
+            else
+            {
+                shirts.AddRange(Resources.LoadAll<Sprite>("clothes/Shirt/" + GameStateManager.Instance.outOfTheme));
+                shirts.AddRange(Resources.LoadAll<Sprite>("clothes/Shirt/Other"));
+            }
+            themedClotheNow = Random.Range(0, 2) == 0 || !hasThemedClothes;
+            if (themedClotheNow && !impostor)
+            {
+                pants.AddRange(Resources.LoadAll<Sprite>("clothes/Pants/" + GameStateManager.Instance.theme));
+            }
+            else
+            {
+                pants.AddRange(Resources.LoadAll<Sprite>("clothes/Pants/" + GameStateManager.Instance.outOfTheme));
+                pants.AddRange(Resources.LoadAll<Sprite>("clothes/Pants/Other"));
+            }
+
+            SpriteRenderer[] clothes = newNpc.transform.GetComponentsInChildren<SpriteRenderer>();
+            if (Random.Range(0f, 10f) > 8 && impostor) // 2/10 chance of giving the npc a costume. If not, gives it clothes
+            {
+                clothes[1].sprite = costumes[Random.Range(0, costumes.Count)];
+            }
+            else
+            {
+                clothes[2].sprite = hats[Random.Range(0, hats.Count)];
+                clothes[3].sprite = shirts[Random.Range(0, shirts.Count)];
+                clothes[4].sprite = pants[Random.Range(0, pants.Count)];
+            }
+            costumes.Clear();
+            hats.Clear();
+            shirts.Clear();
+            pants.Clear();
         }
 
         finishedSpawning = true;
