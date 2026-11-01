@@ -3,10 +3,13 @@ using UnityEngine.Tilemaps;
 
 public class RoomFog : MonoBehaviour
 {
+    [SerializeField] private GameObject room;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            room.SetActive(true);
             GetComponent<TilemapRenderer>().enabled = false; // à transformer en fondu
         }
     }
@@ -15,6 +18,7 @@ public class RoomFog : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            room.SetActive(false);
             GetComponent<TilemapRenderer>().enabled = true;
         }
     }
