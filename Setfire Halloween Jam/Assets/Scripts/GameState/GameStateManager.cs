@@ -7,6 +7,8 @@ public class GameStateManager : MonoBehaviour
     private void Start()
     {
         Instance = this;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void EndGame()
