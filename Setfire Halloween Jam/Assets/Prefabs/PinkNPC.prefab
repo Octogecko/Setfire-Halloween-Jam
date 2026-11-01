@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 8857892848852792583}
   - component: {fileID: 2371935509735535214}
   - component: {fileID: -3710797538735549836}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PinkNPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4672251316453086313}
   - component: {fileID: 4193896966001616777}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,8 +376,8 @@ Transform:
   m_GameObject: {fileID: 3443269444884969613}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.38, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0.002, y: 0.515, z: 0}
+  m_LocalScale: {x: 0.71514404, y: 0.71514404, z: 0.89393}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4652445702139008202}
@@ -429,7 +429,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 200
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3974258121916003055}
   - component: {fileID: 3330934903882003289}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,8 +468,8 @@ Transform:
   m_GameObject: {fileID: 8262352590874558244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.34, z: 0}
-  m_LocalScale: {x: 1.2, y: 1, z: 1}
+  m_LocalPosition: {x: 0.007, y: 0.475, z: 0}
+  m_LocalScale: {x: 0.89656204, y: 0.7969441, z: 0.66412}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4652445702139008202}
@@ -544,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7277884856259355576}
   - component: {fileID: 5457711074974643219}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,8 +560,8 @@ Transform:
   m_GameObject: {fileID: 8774955599199856300}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008, y: -0.346, z: 0}
-  m_LocalScale: {x: 1.45, y: 1, z: 1}
+  m_LocalPosition: {x: 0.002, y: 0.386, z: 0}
+  m_LocalScale: {x: 1.0138901, y: 1.1325631, z: 0.78787}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4652445702139008202}
@@ -620,7 +620,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 1.27, y: 2.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -728,7 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4896843114275930630}
   - component: {fileID: 4300246552007295685}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ Transform:
   m_GameObject: {fileID: 8821792564150117472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.069, z: 0}
+  m_LocalPosition: {x: 0, y: 0.146, z: 0}
   m_LocalScale: {x: 1.05, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
