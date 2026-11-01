@@ -351,6 +351,8 @@ MonoBehaviour:
   hats: []
   shirts: []
   pants: []
+  npcAmount: 100
+  impostorAmount: 10
   mask:
     serializedVersion: 2
     m_Bits: 119
@@ -16555,6 +16557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec5b06bbf6904849830555459359957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameStateManager
+  theme: 0
+  outOfTheme: 0
 --- !u!4 &883247279
 Transform:
   m_ObjectHideFlags: 0
@@ -25776,7 +25780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1574505390
 RectTransform:
   m_ObjectHideFlags: 0
