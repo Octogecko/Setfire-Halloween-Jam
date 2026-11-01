@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class KickOut : MonoBehaviour
 {
+    [SerializeField] private Animator timerAnimator;
     private GameObject interactionCanvas;
     private GameObject player;
     public GameObject npc;
@@ -14,6 +15,8 @@ public class KickOut : MonoBehaviour
 
     public void KickNPCOut()
     {
+        Cursor.visible = false;
+        if (!npc.GetComponent<NPCInteraction>().imposter) timerAnimator.Update(5);
         Destroy(npc);
         interactionCanvas.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = true;

@@ -5,6 +5,11 @@ public class RoomFog : MonoBehaviour
 {
     [SerializeField] private GameObject room;
 
+    private void Start()
+    {
+        room.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

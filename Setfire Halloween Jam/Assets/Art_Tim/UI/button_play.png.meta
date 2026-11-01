@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d73bb7b21386f74458ee844f03fc409c
+guid: ac8f56b318f26a244823d0cc187ba483
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 721237593331748269
-    second: FrontCargoOrangePants_0
+      213: 5400878772334970634
+    second: button_play_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FrontCargoOrangePants_0
+      name: button_play_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 8
-        width: 52
-        height: 115
+        x: 658
+        y: 393
+        width: 639
+        height: 146
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dad423515c9520a00800000000000000
-      internalID: 721237593331748269
+      spriteID: a0749fbd0a6c3fa40800000000000000
+      internalID: 5400878772334970634
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FrontCargoOrangePants_0: 721237593331748269
+      button_play_0: 5400878772334970634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

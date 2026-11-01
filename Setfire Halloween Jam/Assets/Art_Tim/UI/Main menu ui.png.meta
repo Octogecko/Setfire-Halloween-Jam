@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ae7d27371491ea45a56de87517794c3
+guid: bd834f422798869478e5be38ccf43c94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3333972121505756660
-    second: BkacBlackPants_0
+      213: 3703512146970622777
+    second: Main menu ui_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BkacBlackPants_0
+      name: Main menu ui_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 9
-        width: 42
-        height: 114
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f5f769faf5a44e20800000000000000
-      internalID: 3333972121505756660
+      spriteID: 93b3785fca4856330800000000000000
+      internalID: 3703512146970622777
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BkacBlackPants_0: 3333972121505756660
+      Main menu ui_0: 3703512146970622777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
