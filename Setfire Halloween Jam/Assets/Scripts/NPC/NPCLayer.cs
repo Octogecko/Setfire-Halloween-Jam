@@ -10,7 +10,7 @@ public class NPCLayer : MonoBehaviour
 
     private bool inZone;
 
-    private void Start()
+    private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player"); 
         _rd = GetComponent<SpriteRenderer>();
