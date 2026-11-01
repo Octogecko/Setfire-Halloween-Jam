@@ -19,7 +19,7 @@ public class WallLayer : MonoBehaviour
         }
         else
         {
-            _sr.sortingOrder = 16;
+            _sr.sortingOrder = 20;
         }
     }
 }
