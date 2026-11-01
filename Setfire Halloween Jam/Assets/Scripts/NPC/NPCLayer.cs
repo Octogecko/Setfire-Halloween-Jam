@@ -20,25 +20,25 @@ public class NPCLayer : MonoBehaviour
     {
         if (transform.position.y >= player.transform.position.y && inZone || !inZone)
         {
-            _rd.sortingOrder = 5;
-            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 6;
+            _rd.sortingOrder = 18;
+            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 19;
             if (clothes.Length != 0)
             {
                 foreach (GameObject clothe in clothes)
                 {
-                    clothe.GetComponent<SpriteRenderer>().sortingOrder = 7;
+                    clothe.GetComponent<SpriteRenderer>().sortingOrder = 20;
                 }
             }
         }
         else
         {
-            _rd.sortingOrder = 16;
-            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 17;
+            _rd.sortingOrder = 22;
+            if (pants) pants.GetComponent<SpriteRenderer>().sortingOrder = 23;
             if (clothes.Length != 0)
             {
                 foreach (GameObject clothe in clothes)
                 {
-                    clothe.GetComponent<SpriteRenderer>().sortingOrder = 18;
+                    clothe.GetComponent<SpriteRenderer>().sortingOrder = 24;
                 }
             }
         }

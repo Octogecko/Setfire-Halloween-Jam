@@ -37,7 +37,7 @@ public class NPCSpawn : MonoBehaviour
                 for (float j = limits[r][2]; j < limits[r][3]; j += 0.3f)
                 {
                     Vector3 position = new Vector3(i, j);
-                    if (Physics2D.OverlapCircle(position - height, 0.15f, contactFilter).Length == 0)
+                    if (Physics2D.OverlapCircle(position - height, 0.1f, contactFilter).Length == 0)
                     {
                         spawnPoints.Add(position);
                     }

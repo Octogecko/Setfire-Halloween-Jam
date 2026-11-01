@@ -15,7 +15,7 @@ public class SofaLayer : MonoBehaviour
     {
         if (player.transform.position.y >= -2.26)
         {
-            spriteRenderer.sortingOrder = 19;
+            spriteRenderer.sortingOrder = 25;
         }
         else
         {
