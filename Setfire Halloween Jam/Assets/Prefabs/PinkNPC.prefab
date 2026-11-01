@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 8857892848852792583}
   - component: {fileID: 2371935509735535214}
   - component: {fileID: -3710797538735549836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PinkNPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -333,6 +333,7 @@ MonoBehaviour:
   fileSprite: {fileID: -4473487038587497515, guid: da59f2de7fcf4a644ab426dfee8f035c, type: 3}
   fileDialogue: Alright you are NOT respecting the dress code
   imposter: 0
+  hasThemedClothes: 0
 --- !u!114 &-3710797538735549836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,6 +351,7 @@ MonoBehaviour:
   clothes:
   - {fileID: 3443269444884969613}
   - {fileID: 8821792564150117472}
+  selected: 0
 --- !u!1 &3443269444884969613
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4672251316453086313}
   - component: {fileID: 4193896966001616777}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3974258121916003055}
   - component: {fileID: 3330934903882003289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7277884856259355576}
   - component: {fileID: 5457711074974643219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4896843114275930630}
   - component: {fileID: 4300246552007295685}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}

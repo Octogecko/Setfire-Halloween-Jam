@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7453919884364812648}
   - component: {fileID: 2772597979327855481}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 1143349007159595205}
   - component: {fileID: 4204791339612097019}
   - component: {fileID: -3113624425549094338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PurpleNPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -425,6 +425,7 @@ MonoBehaviour:
   fileSprite: {fileID: 2978866451967180049, guid: 0b1806b8cd5da41408a7dbca65a927e6, type: 3}
   fileDialogue: Who are you ?
   imposter: 0
+  hasThemedClothes: 0
 --- !u!114 &-3113624425549094338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   clothes:
   - {fileID: 8427264596918842663}
   - {fileID: 7875337695300917347}
+  selected: 0
 --- !u!1 &7558427990102853332
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8368103485112634683}
   - component: {fileID: 2460806498849684190}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2370691822055182960}
   - component: {fileID: 4385336057871361753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4500562617156277824}
   - component: {fileID: 5162150948051786359}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}

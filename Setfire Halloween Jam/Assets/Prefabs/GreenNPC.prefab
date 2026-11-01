@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7403635275718671090}
   - component: {fileID: 2990436672848111171}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5129400879910419993}
   - component: {fileID: 5659640238672261502}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2211050475722834005}
   - component: {fileID: 4878595272574981019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7482249574662841183}
   - component: {fileID: 5204659096260891195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 3175754903336547054}
   - component: {fileID: 2660264289958169402}
   - component: {fileID: 6041010002906210561}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GreenNPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -793,6 +793,7 @@ MonoBehaviour:
   fileSprite: {fileID: 9149813912856529421, guid: 8304706b8abf6134297412ebbde3f63e, type: 3}
   fileDialogue: I actually hate Halloween
   imposter: 0
+  hasThemedClothes: 0
 --- !u!114 &6041010002906210561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,3 +811,4 @@ MonoBehaviour:
   clothes:
   - {fileID: 3815622956982607687}
   - {fileID: 5277766657030017968}
+  selected: 0

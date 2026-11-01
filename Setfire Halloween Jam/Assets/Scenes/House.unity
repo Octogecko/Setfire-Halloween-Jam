@@ -347,10 +347,14 @@ MonoBehaviour:
   - {fileID: 5663106413461855459, guid: 651deef0bd1953447a4355e3f1ad7adb, type: 3}
   - {fileID: 3004515368595351701, guid: e5827ddbb28ab7346b75e76681766f7b, type: 3}
   - {fileID: 1638168020945527056, guid: de78ec6f36cd16c4582f283abcbb809a, type: 3}
+  - {fileID: 5712634309950212340, guid: 81890d2f36ca19245b6754d82cd075be, type: 3}
+  - {fileID: 8350571611930423680, guid: e07e83467eb4335448f9ab1c69564440, type: 3}
+  - {fileID: 660259097094332137, guid: c05aa4be021ddef4d8951d5574674321, type: 3}
   costumes: []
   hats: []
   shirts: []
   pants: []
+  file: {fileID: 0}
   npcAmount: 100
   impostorAmount: 10
   mask:
@@ -16317,8 +16321,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8e6ff9e52a5bf57478f705fab9785d50, type: 2}
+  m_sharedMaterial: {fileID: 4751147349871878004, guid: 8e6ff9e52a5bf57478f705fab9785d50, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26330,10 +26334,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

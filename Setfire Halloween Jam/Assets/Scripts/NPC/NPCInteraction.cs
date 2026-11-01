@@ -5,7 +5,7 @@ using TMPro;
 public class NPCInteraction : MonoBehaviour
 {
     [SerializeField] private Sprite fileSprite;
-    [SerializeField] private string fileDialogue;
+    public string fileDialogue;
     public bool imposter;
     public bool hasThemedClothes;
 

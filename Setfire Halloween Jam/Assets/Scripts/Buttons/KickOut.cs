@@ -16,7 +16,7 @@ public class KickOut : MonoBehaviour
     public void KickNPCOut()
     {
         Cursor.visible = false;
-        if (!npc.GetComponent<NPCInteraction>().imposter) timerAnimator.Update(5);
+        if (!npc.GetComponent<NPCInteraction>().imposter) timerAnimator.speed++;
         else NPCSpawn.Instance.impostorAmount--;
         Destroy(npc);
         interactionCanvas.SetActive(false);

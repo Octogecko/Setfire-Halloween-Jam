@@ -13,8 +13,9 @@ public class GameStateManager : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
 
-        theme = ThemesEnum.PUMPKIN; // Premier niveau
-        outOfTheme = ThemesEnum.GHOST;
+        int themeChoice = Random.Range(0, 1);
+        theme = themeChoice == 0 ? ThemesEnum.PUMPKIN : ThemesEnum.GHOST; // Premier niveau
+        outOfTheme = themeChoice == 1 ? ThemesEnum.PUMPKIN : ThemesEnum.GHOST;
     }
 
     public void EndGame()

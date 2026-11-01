@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class NPCSpawn : MonoBehaviour
@@ -13,6 +15,8 @@ public class NPCSpawn : MonoBehaviour
     [SerializeField] private List<Sprite> hats;
     [SerializeField] private List<Sprite> shirts;
     [SerializeField] private List<Sprite> pants;
+    public TextAsset file;
+    private string[] fileLines;
     private GameObject newNpc;
 
     private List<List<float>> limits = new List<List<float>>()
@@ -35,6 +39,8 @@ public class NPCSpawn : MonoBehaviour
     void Start()
     {
         Instance = this;
+
+        fileLines = File.ReadAllLines("cringe_sentences.txt");
 
         contactFilter.useTriggers = true;
         contactFilter.layerMask = mask;
@@ -65,6 +71,7 @@ public class NPCSpawn : MonoBehaviour
             int spawnPointIndex = Random.Range(0, availableSpawnPoint[room].Count);
             newNpc = Instantiate(chosenNPC, parent);
             newNpc.transform.position = availableSpawnPoint[room][spawnPointIndex];
+            newNpc.GetComponent<NPCInteraction>().fileDialogue = fileLines[Random.Range(0, fileLines.Count())];
             availableSpawnPoint[room].RemoveAt(spawnPointIndex);
 
             // Giving the NPC clothes
