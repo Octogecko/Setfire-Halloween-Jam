@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7143756839439553096}
   - component: {fileID: 8429468111649770944}
   - component: {fileID: -2857931185335934632}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: BlueNPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3965588621107315559}
   - component: {fileID: 4962876369619874264}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: shirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,8 +376,8 @@ Transform:
   m_GameObject: {fileID: 4403674839171140371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.007, y: 0.212, z: 0}
+  m_LocalScale: {x: 0.8898437, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2337286235716329954}
@@ -429,7 +429,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 200
+  m_SortingOrder: 22
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2490172984264153804}
   - component: {fileID: 7645494112334153364}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,8 +468,8 @@ Transform:
   m_GameObject: {fileID: 5378291030576008497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.38, z: 0}
-  m_LocalScale: {x: 1.3, y: 1, z: 1}
+  m_LocalPosition: {x: 0.014, y: 0.138, z: 0}
+  m_LocalScale: {x: 0.8125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2337286235716329954}
@@ -528,7 +528,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 1.27, y: 2.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -544,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731399508432962923}
   - component: {fileID: 4169687059430676013}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,8 +560,8 @@ Transform:
   m_GameObject: {fileID: 6724864025645641879}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.009, y: 0.487, z: 0}
-  m_LocalScale: {x: 1.2, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.569, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2337286235716329954}
@@ -613,7 +613,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 200
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -728,7 +728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7588684255100137473}
   - component: {fileID: 6088780961685560049}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ Transform:
   m_GameObject: {fileID: 7387447142019212348}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.455, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.496, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -797,7 +797,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 200
+  m_SortingOrder: 22
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
