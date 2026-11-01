@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class NPCSpawn : MonoBehaviour
 {
+    public static NPCSpawn Instance;
+
     public static bool finishedSpawning = false;
 
     [SerializeField] private List<Transform> rooms = new List<Transform>();
@@ -24,7 +26,7 @@ public class NPCSpawn : MonoBehaviour
     private Vector3 height = new Vector3(0f, 0.2f);
 
     [SerializeField] private int npcAmount = 100;
-    [SerializeField] private int impostorAmount = 10;
+    public int impostorAmount = 10;
     private int currentImpostors = 0;
 
     private ContactFilter2D contactFilter = new ContactFilter2D();
@@ -32,6 +34,8 @@ public class NPCSpawn : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
+
         contactFilter.useTriggers = true;
         contactFilter.layerMask = mask;
         contactFilter.useLayerMask = true;
