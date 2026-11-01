@@ -103,12 +103,12 @@ TextureImporter:
       name: blinky_head_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 23
+        x: 11
+        y: 155
         width: 94
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 11b2dc7cbabd80347b5965aa61735a64
     internalID: 0
     vertices: []
     indices: 
