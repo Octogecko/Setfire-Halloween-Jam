@@ -64,6 +64,7 @@ public class PlayerInteractions : MonoBehaviour
         }
         closestObject.transform.GetChild(0).gameObject.SetActive(true);
         closestObject.transform.GetChild(1).gameObject.SetActive(true);
+        closestObject.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().sortingOrder = 1000;
 
         return closestObject;
     }
