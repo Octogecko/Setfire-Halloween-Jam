@@ -5,5 +5,7 @@ public enum Sounds
     INTERACT,
     CHANGE_CHOICE,
     GLOW,
-    KICK
+    KICK,
+    KICK_IMPOSTOR,
+    KICK_NON_IMPOSTOR
 }

@@ -4,7 +4,7 @@ public class SoundManager : MonoBehaviour
 {
     private AudioSource audioSource;
 
-    [SerializeField] private AudioClip interactSfx, changeChoiceSfx, glowSfx, kickSfx;
+    [SerializeField] private AudioClip interactSfx, changeChoiceSfx, glowSfx, kickSfx, kickImpostorSfx, kickNonImpostorSfx;
 
     private void Start()
     {
@@ -26,6 +26,12 @@ public class SoundManager : MonoBehaviour
                 break;
             case Sounds.KICK:
                 audioSource.PlayOneShot(kickSfx);
+                break;
+            case Sounds.KICK_IMPOSTOR:
+                audioSource.PlayOneShot(kickImpostorSfx);
+                break;
+            case Sounds.KICK_NON_IMPOSTOR:
+                audioSource.PlayOneShot(kickNonImpostorSfx);
                 break;
         }
     }

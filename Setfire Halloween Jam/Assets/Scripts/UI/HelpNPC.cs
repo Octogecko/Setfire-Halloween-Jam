@@ -9,7 +9,7 @@ public class HelpNPC : MonoBehaviour
     private void Start()
     {
         tmp.text = "Hi! This party's dress code is \"" + GameStateManager.Instance.theme + "\". Please show anyone who didn't follow it the door.I don't need any party killers in here.";
-        Invoke("DestroyHelper", 3f);
+        Invoke("DestroyHelper", 4f);
     }
 
     private void DestroyHelper()
