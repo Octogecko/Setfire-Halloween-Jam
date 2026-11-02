@@ -27,11 +27,10 @@ public class NPCSpawn : MonoBehaviour
         new List<float> { -8f, 8f, -6.5f, -1.5f }, // Living room
     };
     private List<List<Vector3>> availableSpawnPoint = new List<List<Vector3>>();
-    private Vector3 height = new Vector3(0f, 0.2f);
 
-    [SerializeField] private int npcAmount = 100;
-    public int impostorAmount = 10;
-    private int currentImpostors = 0;
+    [SerializeField] private int npcAmount = 70;
+    public int impostorAmount = 7;
+    public int currentImpostors = 0;
 
     private ContactFilter2D contactFilter = new ContactFilter2D();
     public LayerMask mask = new LayerMask();
@@ -53,7 +52,7 @@ public class NPCSpawn : MonoBehaviour
                 for (float j = limits[r][2]; j < limits[r][3]; j += 0.3f)
                 {
                     Vector3 position = new Vector3(i, j);
-                    if (Physics2D.OverlapCircle(position - height, 0.1f, contactFilter).Length == 0)
+                    if (Physics2D.OverlapCircle(position, 0.1f, contactFilter).Length == 0)
                     {
                         spawnPoints.Add(position);
                     }
@@ -69,15 +68,17 @@ public class NPCSpawn : MonoBehaviour
             Transform parent = rooms[room];
             GameObject chosenNPC = npc[Random.Range(0, npc.Count)];
             int spawnPointIndex = Random.Range(0, availableSpawnPoint[room].Count);
+            Vector3 spawnPoint = availableSpawnPoint[room][spawnPointIndex];
             newNpc = Instantiate(chosenNPC, parent);
-            newNpc.transform.position = availableSpawnPoint[room][spawnPointIndex];
+            newNpc.transform.position = spawnPoint;
             newNpc.GetComponent<NPCInteraction>().fileDialogue = fileLines[Random.Range(0, fileLines.Count())];
             availableSpawnPoint[room].RemoveAt(spawnPointIndex);
+            availableSpawnPoint[room].RemoveAll(spawn => (spawnPoint - spawn).magnitude <= 0.8f);
 
             // Giving the NPC clothes
             ref bool hasThemedClothes = ref newNpc.GetComponent<NPCInteraction>().hasThemedClothes;
             ref bool impostor = ref newNpc.GetComponent<NPCInteraction>().imposter;
-            if (currentImpostors < 10) impostor = Random.Range(0, 10) == 8;
+            if (currentImpostors < impostorAmount) impostor = Random.Range(0, 10) == 8;
             else impostor = false;
 
             if (impostor) currentImpostors++; 
@@ -139,6 +140,9 @@ public class NPCSpawn : MonoBehaviour
             hats.Clear();
             shirts.Clear();
             pants.Clear();
+
+            if (availableSpawnPoint[room].Count == 0) availableSpawnPoint.Remove(availableSpawnPoint[room]);
+            if (availableSpawnPoint.Count == 0) break;
         }
 
         finishedSpawning = true;
