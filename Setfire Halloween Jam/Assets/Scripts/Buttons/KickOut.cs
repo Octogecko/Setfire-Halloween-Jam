@@ -16,6 +16,7 @@ public class KickOut : MonoBehaviour
 
     public void KickNPCOut()
     {
+        player.GetComponent<SoundManager>().PlayAudio(Sounds.KICK);
         Cursor.visible = false;
         if (!npc.GetComponent<NPCInteraction>().imposter) timerAnimator.speed++;
         else NPCSpawn.Instance.currentImpostors--;

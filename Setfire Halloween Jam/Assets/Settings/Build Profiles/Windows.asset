@@ -17,20 +17,11 @@ MonoBehaviour:
   m_Subtarget: 2
   m_PlatformId: 4e3c793746204150860bf175a9a41a05
   m_PlatformBuildProfile:
-    rid: 5244931080783396954
+    rid: 6488575486761632206
   m_ActivePlatformGuid: 
   m_AdditionalPlatformBuildSettings: []
-  m_OverrideGlobalSceneList: 1
-  m_Scenes:
-  - m_enabled: 1
-    m_path: Assets/Scenes/Main menu.unity
-    m_guid: 773d833da38108848b845ad076ae0e77
-  - m_enabled: 1
-    m_path: Assets/Scenes/Cinematic.unity
-    m_guid: 44900f566d3701749abe90c465542ed6
-  - m_enabled: 1
-    m_path: Assets/Scenes/House.unity
-    m_guid: 8c9cfa26abfee488c85f1582747f6a02
+  m_OverrideGlobalSceneList: 0
+  m_Scenes: []
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -39,7 +30,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5244931080783396954
+    - rid: 6488575486761632206
       type: {class: WindowsPlatformSettings, ns: UnityEditor.WindowsStandalone, asm: UnityEditor.WindowsStandalone.Extensions}
       data:
         m_Development: 0

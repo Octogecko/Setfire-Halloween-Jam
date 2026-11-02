@@ -6,6 +6,7 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance;
     public ThemesEnum theme;
     public ThemesEnum outOfTheme;
+    public int impostorsLeft;
 
     private void Awake()
     {
@@ -21,7 +22,7 @@ public class GameStateManager : MonoBehaviour
 
     public void EndGame()
     {
-        int impostorsLeft = NPCSpawn.Instance.currentImpostors;
+        impostorsLeft = NPCSpawn.Instance.currentImpostors;
 
         if (impostorsLeft > 0)
         {

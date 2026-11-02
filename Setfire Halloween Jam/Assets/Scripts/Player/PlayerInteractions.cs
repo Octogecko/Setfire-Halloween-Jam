@@ -12,6 +12,7 @@ public class PlayerInteractions : MonoBehaviour
     {
         if (context.started && targetObject)
         {
+            GetComponent<SoundManager>().PlayAudio(Sounds.INTERACT);
             targetObject.GetComponent<NPCInteraction>().Interact();
         }
     }
@@ -61,11 +62,19 @@ public class PlayerInteractions : MonoBehaviour
         {
             targetObject.transform.GetChild(0).gameObject.SetActive(false);
             targetObject.transform.GetChild(1).gameObject.SetActive(false);
+            closestObject.transform.GetChild(0).gameObject.SetActive(true);
+            closestObject.transform.GetChild(1).gameObject.SetActive(true);
+            closestObject.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().sortingOrder = 1000;
+            GetComponent<SoundManager>().PlayAudio(Sounds.GLOW);
         }
-        closestObject.transform.GetChild(0).gameObject.SetActive(true);
-        closestObject.transform.GetChild(1).gameObject.SetActive(true);
-        closestObject.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().sortingOrder = 1000;
+        else if (!targetObject)
+        {
+            closestObject.transform.GetChild(0).gameObject.SetActive(true);
+            closestObject.transform.GetChild(1).gameObject.SetActive(true);
+            closestObject.transform.GetChild(1).gameObject.GetComponent<MeshRenderer>().sortingOrder = 1000;
+            GetComponent<SoundManager>().PlayAudio(Sounds.GLOW);
+        }
 
-        return closestObject;
+            return closestObject;
     }
 }
